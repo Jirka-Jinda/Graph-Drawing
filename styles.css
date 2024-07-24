@@ -1,0 +1,44 @@
+#canvas {
+    display: block;
+    margin: auto;
+    margin-top: 5em;
+    background-color: white;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+.button {
+    display: block;
+    padding: 1em 2em;
+    font-size: large;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.button:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.centered {
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+}

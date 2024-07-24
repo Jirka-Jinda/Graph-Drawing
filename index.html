@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Canvas tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/javascript" src="canvas.js"></script>
+  </head>
+  <body onload="init_js()" class="flex-row" >
+    <canvas class="border" id="canvas" width="800" height="400"></canvas>
+    <div class="flex-column">
+      <div class="flex-row">
+        <label for="values">How many values?</label>
+        <select onchange="change_form()" name="values" id="select_values">
+          <option value="1" selected="selected">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <label for="graph">Graph type?</label>
+        <select name="graph" id="select_graph">
+          <option value="cols" selected="selected">Columns</option>
+          <option value="points">Points</option>
+          <option value="con_points">Connected points</option>
+          <option value="pie_chart">Pie chart</option>
+        </select>
+      </div>
+      <form onsubmit="draw(); return false;" id="graph_form" class="flex-column centered">
+        <div id="input1">
+          <label>Name: </label>
+          <input id="text1" type="text">
+          <label>Value: </label>
+          <input id="val1" type="text">
+        </div>
+        <div id="input2">
+          <label>Name: </label>
+          <input id="text2" type="text">
+          <label>Value: </label>
+          <input id="val2" type="text">
+        </div>
+        <div id="input3">
+          <label>Name: </label>
+          <input id="text3" type="text">
+          <label>Value: </label>
+          <input id="val3" type="text">
+        </div>
+        <div id="input4">
+          <label>Name: </label>
+          <input id="text4" type="text">
+          <label>Value: </label>
+          <input id="val4" type="text">
+        </div>
+        <div id="input5">
+          <label>Name: </label>
+          <input id="text5" type="text">
+          <label>Value: </label>
+          <input id="val5" type="text">
+        </div>
+        <div id="input6">
+          <label>Name: </label>
+          <input id="text6" type="text">
+          <label>Value: </label>
+          <input id="val6" type="text">
+        </div>
+        <div id="input7">
+          <label>Name: </label>
+          <input id="text7" type="text">
+          <label>Value: </label>
+          <input id="val7" type="text">
+        </div>
+        <div id="input8">
+          <label>Name: </label>
+          <input id="text8" type="text">
+          <label>Value: </label>
+          <input id="val8" type="text">
+        </div>
+        <div id="input9">
+          <label>Name: </label>
+          <input id="text9" type="text">
+          <label>Value: </label>
+          <input id="val9" type="text">
+        </div>
+        <div id="input10">
+          <label>Name: </label>
+          <input id="text10" type="text">
+          <label>Value: </label>
+          <input id="val10" type="text">
+        </div>
+        <div>
+          <label>Hightlight: </label>
+          <input id="highlight" type="text">
+        </div>
+        <div class="flex-row">
+          <input type="submit" value="Draw" class="border button centered">
+        </div>
+      </form>
+      <button onclick="clear_canvas()" class="border button centered">Clear</button>
+    </div>
+  </body>
+</html>
+
